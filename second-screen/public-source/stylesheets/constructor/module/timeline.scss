@@ -1,0 +1,67 @@
+.livewall-container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  bottom:0;
+  overflow:hidden;
+
+  .timeline{
+    display: block;
+    position: relative;
+    width: auto;
+    white-space:nowrap;
+    margin-bottom: 25px;
+    margin-left: 100%;
+    @include transition(.6s all);
+    .post {
+      display: inline-block;
+      position: relative;
+      margin-right: 60px;
+      .content {
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 150px;
+        background-color:$spotifyGreen;
+        border:3px solid white;
+        box-sizing:border-box;
+        margin-bottom: 20px;
+
+        .profile {
+          display: block;
+          position: relative;
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+          border: 2px solid white;
+          vertical-align: middle;
+          border-radius:50px;
+          margin: 0 auto;
+          margin-top: 15px;
+        }
+
+        .message {
+          margin-top: 16px;
+          width: 152px;
+          display: inline-block;
+          white-space: normal;
+        }
+      }
+      .vinyl {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+
+  .baseline {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    bottom:80px;
+  }
+}

@@ -1,0 +1,35 @@
+////////////////////////////
+// COLOR SCHEMES ///////////
+////////////////////////////
+
+$spotifyGreen: #2ebd59;
+$starbucksGreen: #00592D;
+$first-place-gold:rgb(237, 244, 35);
+
+// Everyone obey's the general first
+$cover-width: 180px;
+$border-style: 1px solid white;
+$font-type-header: 'Montserrat';
+$font-type-sub: 'Lato';
+
+html,body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  background: black;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+section {
+  display: inline-block;
+}
+
+p {
+  color: white;
+  font-family: $font-type-header;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}

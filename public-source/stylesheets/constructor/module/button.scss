@@ -1,0 +1,59 @@
+.spotify-login {
+  display: none;
+  position: absolute;
+  background: $spotifyGreen;
+  height: calc(100% - 22px);
+  width: calc(100% - 22px);
+  top:50%;
+  left: 50%;
+  border: 1px solid white;
+  opacity: 0.95;
+  box-sizing:border-box;
+  cursor: pointer;  
+  @include transform(translate(-50%,-50%));
+  @include transition(all .8s);
+
+  &.logged-in {
+    top: 40px;
+    @include transform(translate(-50%,0%));
+    @include transition(all .8s);
+    .btn {
+      cursor: default;
+    }
+  }
+}
+
+.btn {
+  position:absolute;
+  top:50%;
+  left:50%;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing:border-box;
+  @include transform(translate(-50%,-50%));
+  .btn-icon{
+    background-image: url(../media/img/sprite@1.04aacdf1.png);
+    background-position: 0 0;
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    margin-left: -10px;
+    vertical-align: middle;
+  }
+  .btn-text{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-family: $font-type-header;
+  }
+}
+
+#game-container {
+  position: absolute;
+  top:0;
+  left:0;
+}

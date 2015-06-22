@@ -1,0 +1,206 @@
+.wrapper {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image:url(http://musicclash.nl/second-screen/public/media/img/stars.png);
+}
+
+.leaderboard-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  .logo {
+    display: block;
+    position: absolute;
+    left:50%;
+    width: 240px;
+    margin-left: -120px;
+    margin-top: 15px;
+    background:black;
+    img {
+      width: 210px;
+    }
+  }
+  .next-track {
+    display: block;
+    position: absolute;
+    top:29px;
+    left:calc(50% + 220px);
+
+    p {
+      font-size: 18x;
+      font-family: "Lato";
+      font-weight: 100;
+      line-height: normal;
+    }
+
+    span {
+      font-size: 37px;
+      font-family: "Montserrat";
+    }
+  }
+  .leaderboard {
+    display: inline-block;
+    width: 990px;
+    margin-top: 80px;
+    border:3px solid white;
+
+    .profile {
+      display: inline-block;
+      position: relative;
+      background-color:white;
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      border: 2px solid white;
+      vertical-align: middle;
+      margin-right: 20px;
+      border-radius:100px;
+    }
+
+    .first-place {
+      margin-top: 110px;
+      margin-bottom: 20px;
+      vertical-align: middle;
+      @include transition(0.6s all);
+      h2 {
+        display: inline-block;
+        position: relative;
+        color:$first-place-gold;
+        font-family: "Montserrat";
+        font-size: 50px;
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+      .profile{
+        border-color:$first-place-gold;
+        .crown { 
+          display: block;
+          position: absolute;
+          top:-35px;
+          left:50%;
+          margin-left: -15px;
+          img {
+            width: 30px;
+          }
+        }
+      }
+      .score-container {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        p {
+          display: inline-block;
+          font-size: 40px;
+          color:$first-place-gold;
+          vertical-align: middle;
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          color:$first-place-gold;
+          font-family: "Lato";
+          font-weight: 100;
+          font-size: 25px;
+          margin-left: 10px;
+        }
+      }
+    }
+    ul {
+      margin-bottom: 20px;
+      li {
+        display: inline-block;
+        position: relative;
+        margin-right: 60px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        h2 {
+          display: inline-block;
+          color:white;
+          font-family: "Montserrat";
+          font-size: 30px;
+          vertical-align: middle;
+          margin-right: 10px;          
+        }
+
+        .profile {
+          height: 60px;
+          width: 60px;
+          margin-right: 10px;
+        }
+        .score-container{
+          display: inline-block;
+          p {
+            display: inline-block;
+            color:white;
+            font-size: 20px;
+            vertical-align: middle;
+          }
+          span {
+            margin-left: 10px;
+            font-size:13px;
+            font-family: "Lato";
+            font-weight: 100;
+            vertical-align: middle;
+            color:white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.current-track {
+  &:before,&:after {
+    content:"";
+    display: inline-block;
+    width: 35px;
+    height: 1px;
+    background:white;
+    vertical-align: middle;
+  }
+  p {
+    display: inline-block;
+    font-family: "Lato";
+    font-weight:100;
+    vertical-align: middle;
+    margin:0 10px;
+
+    span {
+      font-family: "Montserrat";
+    }
+  }
+}
+
+@media screen and (max-width:1050px){
+  .leaderboard-container{
+    .next-track {
+      top:40px;
+      p {
+        font-size: 16px;
+      }
+      span {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:8px){
+  .leaderboard-container{
+    .next-track {
+      top:50px;
+      p {
+        font-size: 12px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

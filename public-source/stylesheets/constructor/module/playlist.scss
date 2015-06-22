@@ -1,0 +1,172 @@
+.my-playlists {
+  display: block;
+  position: absolute;
+  height: $cover-width;
+  width: $cover-width;
+  top:50%;
+  left:50%;
+  @include transform(translate(-50%,-15%));
+  @include transition(all 0.8s ease-in-out);
+  .playlists-container {
+    display: block;
+    position: relative;
+    height: 100%;
+    .playlist {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border:2px solid white;
+      box-sizing:border-box;
+      opacity: 1;
+      cursor: pointer;
+
+      .cover-image {
+        display: block;
+        position: relative;
+        height: 100%;
+        background-position:center center;
+        background-size:cover;
+      }
+      h2,h3 {
+        display: inline-block;
+        position: relative;
+        width: 230px;
+        opacity: 0;
+        font-family: $font-type-header;
+        font-size:12px;
+        letter-spacing:1px;
+        color: white;
+        @include transition(all 2s);
+        @include transform(translateX(-23px));
+      }
+      h3 {
+        font-size: 10px;
+        font-family: $font-type-sub;
+        font-weight: 200;
+      }
+      h2 {
+        margin-top: 20px;
+      }
+      .overlay {
+        display: none;
+        position: absolute;
+        top:0;
+        height: 100%;
+        width: 100%;
+        background:$spotifyGreen;
+
+        h2 {
+          font-weight: 600;
+          width: 100%;
+        }
+      }
+      &.selected {
+        opacity: 1;
+        h2,h3 {
+          opacity: 1;
+          @include transition(all 2s);
+        }
+        .overlay {
+          display: none;
+        }
+      }
+    }
+  } 
+  &.animated {
+    @include transform(translate(-50%,200%));
+  }
+}
+
+.choose-playlist {
+  display: none;
+  position: absolute;
+  height: $cover-width;
+  width: $cover-width;
+  top:50%;
+  left:50%;
+  @include transform(translate(-50%,-15%));
+  box-sizing: border-box;
+  border: 2px solid white;
+  p {
+    position: absolute;
+    color: white;
+    font-family: $font-type-header;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    width: 157px;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%,-50%));
+    padding: 8px;
+  }
+  .overlay {
+    display: block;
+    background: $spotifyGreen;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.95;
+  }
+}
+
+.start-screen {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  .btn {
+    display:inline-block;
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%,-50%));
+    p {
+      font-size: 14px;
+      font-family: $font-type-header;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.vinyl {
+  display: none;
+  position: absolute;
+  top:50%;
+  left:50%;
+  height: 165.2px;
+  width: 163.79999999999998px;
+  @include transform(translate(-50%,-15%) scale(1,1));
+  @include transition(all 0.8s ease-in-out);
+  -webkit-transform-origin: 50% 50%; 
+  img {
+    width: 100%;
+  }
+}
+
+.frame {
+  display: block;
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  top:50%;
+  left:50%;
+  @include transform(translate(-50%,-50%));
+  pointer-events:none;
+  box-sizing:border-box;
+  border: $border-style;
+}
+
+.logo {
+  display: none;
+  position: relative;
+  margin-top: 22px;
+  img {
+    width: 245px;
+  }
+}

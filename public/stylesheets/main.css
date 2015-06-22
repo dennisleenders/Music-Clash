@@ -1,0 +1,552 @@
+/* line 17, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 13, ../../public-source/stylesheets/general/general.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: white;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/* line 23, ../../public-source/stylesheets/general/general.scss */
+section {
+  display: inline-block; }
+
+/* line 27, ../../public-source/stylesheets/general/general.scss */
+p {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 2px; }
+
+/* line 1, ../../public-source/stylesheets/constructor/module/button.scss */
+.spotify-login {
+  display: none;
+  position: absolute;
+  background: #2ebd59;
+  height: calc(100% - 22px);
+  width: calc(100% - 22px);
+  top: 50%;
+  left: 50%;
+  border: 1px solid white;
+  opacity: 0.95;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
+  /* line 16, ../../public-source/stylesheets/constructor/module/button.scss */
+  .spotify-login.logged-in {
+    top: 40px;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s; }
+    /* line 20, ../../public-source/stylesheets/constructor/module/button.scss */
+    .spotify-login.logged-in .btn {
+      cursor: default; }
+
+/* line 26, ../../public-source/stylesheets/constructor/module/button.scss */
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  /* line 36, ../../public-source/stylesheets/constructor/module/button.scss */
+  .btn .btn-icon {
+    background-image: url(../media/img/sprite@1.04aacdf1.png);
+    background-position: 0 0;
+    display: inline-block;
+    position: relative;
+    height: 17px;
+    width: 17px;
+    margin-left: -10px;
+    vertical-align: middle; }
+  /* line 46, ../../public-source/stylesheets/constructor/module/button.scss */
+  .btn .btn-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-family: "Montserrat"; }
+
+/* line 55, ../../public-source/stylesheets/constructor/module/button.scss */
+#game-container {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 1, ../../public-source/stylesheets/constructor/module/playlist.scss */
+.my-playlists {
+  display: block;
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15%);
+  -moz-transform: translate(-50%, -15%);
+  -ms-transform: translate(-50%, -15%);
+  -o-transform: translate(-50%, -15%);
+  transform: translate(-50%, -15%);
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out; }
+  /* line 10, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .my-playlists .playlists-container {
+    display: block;
+    position: relative;
+    height: 100%; }
+    /* line 14, ../../public-source/stylesheets/constructor/module/playlist.scss */
+    .my-playlists .playlists-container .playlist {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid white;
+      box-sizing: border-box;
+      opacity: 1;
+      cursor: pointer; }
+      /* line 24, ../../public-source/stylesheets/constructor/module/playlist.scss */
+      .my-playlists .playlists-container .playlist .cover-image {
+        display: block;
+        position: relative;
+        height: 100%;
+        background-position: center center;
+        background-size: cover; }
+      /* line 31, ../../public-source/stylesheets/constructor/module/playlist.scss */
+      .my-playlists .playlists-container .playlist h2, .my-playlists .playlists-container .playlist h3 {
+        display: inline-block;
+        position: relative;
+        width: 230px;
+        opacity: 0;
+        font-family: "Montserrat";
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: white;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -o-transition: all 2s;
+        transition: all 2s;
+        -webkit-transform: translateX(-23px);
+        -moz-transform: translateX(-23px);
+        -ms-transform: translateX(-23px);
+        -o-transform: translateX(-23px);
+        transform: translateX(-23px); }
+      /* line 43, ../../public-source/stylesheets/constructor/module/playlist.scss */
+      .my-playlists .playlists-container .playlist h3 {
+        font-size: 10px;
+        font-family: "Lato";
+        font-weight: 200; }
+      /* line 48, ../../public-source/stylesheets/constructor/module/playlist.scss */
+      .my-playlists .playlists-container .playlist h2 {
+        margin-top: 20px; }
+      /* line 51, ../../public-source/stylesheets/constructor/module/playlist.scss */
+      .my-playlists .playlists-container .playlist .overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #2ebd59; }
+        /* line 59, ../../public-source/stylesheets/constructor/module/playlist.scss */
+        .my-playlists .playlists-container .playlist .overlay h2 {
+          font-weight: 600;
+          width: 100%; }
+      /* line 64, ../../public-source/stylesheets/constructor/module/playlist.scss */
+      .my-playlists .playlists-container .playlist.selected {
+        opacity: 1; }
+        /* line 66, ../../public-source/stylesheets/constructor/module/playlist.scss */
+        .my-playlists .playlists-container .playlist.selected h2, .my-playlists .playlists-container .playlist.selected h3 {
+          opacity: 1;
+          -webkit-transition: all 2s;
+          -moz-transition: all 2s;
+          -o-transition: all 2s;
+          transition: all 2s; }
+        /* line 70, ../../public-source/stylesheets/constructor/module/playlist.scss */
+        .my-playlists .playlists-container .playlist.selected .overlay {
+          display: none; }
+  /* line 76, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .my-playlists.animated {
+    -webkit-transform: translate(-50%, 200%);
+    -moz-transform: translate(-50%, 200%);
+    -ms-transform: translate(-50%, 200%);
+    -o-transform: translate(-50%, 200%);
+    transform: translate(-50%, 200%); }
+
+/* line 81, ../../public-source/stylesheets/constructor/module/playlist.scss */
+.choose-playlist {
+  display: none;
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15%);
+  -moz-transform: translate(-50%, -15%);
+  -ms-transform: translate(-50%, -15%);
+  -o-transform: translate(-50%, -15%);
+  transform: translate(-50%, -15%);
+  box-sizing: border-box;
+  border: 2px solid white; }
+  /* line 91, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .choose-playlist p {
+    position: absolute;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    width: 157px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 8px; }
+  /* line 104, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .choose-playlist .overlay {
+    display: block;
+    background: #2ebd59;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.95; }
+
+/* line 115, ../../public-source/stylesheets/constructor/module/playlist.scss */
+.start-screen {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0; }
+  /* line 121, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .start-screen .btn {
+    display: inline-block;
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    /* line 129, ../../public-source/stylesheets/constructor/module/playlist.scss */
+    .start-screen .btn p {
+      font-size: 14px;
+      font-family: "Montserrat";
+      letter-spacing: 2px; }
+
+/* line 137, ../../public-source/stylesheets/constructor/module/playlist.scss */
+.vinyl {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 165.2px;
+  width: 163.79999999999998px;
+  -webkit-transform: translate(-50%, -15%) scale(1, 1);
+  -moz-transform: translate(-50%, -15%) scale(1, 1);
+  -ms-transform: translate(-50%, -15%) scale(1, 1);
+  -o-transform: translate(-50%, -15%) scale(1, 1);
+  transform: translate(-50%, -15%) scale(1, 1);
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transform-origin: 50% 50%; }
+  /* line 147, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .vinyl img {
+    width: 100%; }
+
+/* line 152, ../../public-source/stylesheets/constructor/module/playlist.scss */
+.frame {
+  display: block;
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1px solid white; }
+
+/* line 165, ../../public-source/stylesheets/constructor/module/playlist.scss */
+.logo {
+  display: none;
+  position: relative;
+  margin-top: 22px; }
+  /* line 169, ../../public-source/stylesheets/constructor/module/playlist.scss */
+  .logo img {
+    width: 245px; }
+
+/* line 1, ../../public-source/stylesheets/constructor/module/nav-orb.scss */
+.nav-orbs {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 54px; }
+  /* line 6, ../../public-source/stylesheets/constructor/module/nav-orb.scss */
+  .nav-orbs .orb {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: none;
+    margin-right: 5px;
+    box-sizing: border-box;
+    border: 1px solid white; }
+    /* line 17, ../../public-source/stylesheets/constructor/module/nav-orb.scss */
+    .nav-orbs .orb:last-child {
+      margin: 0; }
+    /* line 21, ../../public-source/stylesheets/constructor/module/nav-orb.scss */
+    .nav-orbs .orb.selected {
+      background: white; }
+
+/* line 2, ../../public-source/stylesheets/constructor/module/tutorials.scss */
+.tutorials .tutorial-holder {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  /* line 7, ../../public-source/stylesheets/constructor/module/tutorials.scss */
+  .tutorials .tutorial-holder .tutorial {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    /* line 13, ../../public-source/stylesheets/constructor/module/tutorials.scss */
+    .tutorials .tutorial-holder .tutorial p {
+      margin-top: 20px;
+      letter-spacing: 0;
+      font-size: 18px; }
+    /* line 18, ../../public-source/stylesheets/constructor/module/tutorials.scss */
+    .tutorials .tutorial-holder .tutorial.active {
+      display: block; }
+/* line 23, ../../public-source/stylesheets/constructor/module/tutorials.scss */
+.tutorials .nav-orbs {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  margin: 0; }
+  /* line 28, ../../public-source/stylesheets/constructor/module/tutorials.scss */
+  .tutorials .nav-orbs .orb {
+    width: 8px;
+    height: 8px; }
+
+/* line 1, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+.profile-orb {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 40px;
+  height: 40px; }
+  /* line 8, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .profile-orb .photo {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    background-size: cover; }
+
+/* line 18, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+.track-playing {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 100%; }
+  /* line 23, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .track-playing p {
+    display: inline-block;
+    position: relative;
+    font-family: "Montserrat";
+    font-size: 11px; }
+  /* line 29, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .track-playing span {
+    font-family: "Lato";
+    font-weight: 100; }
+  /* line 33, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .track-playing:after, .track-playing:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 1px;
+    background: white;
+    margin-bottom: 3px; }
+  /* line 42, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .track-playing:before {
+    margin-right: 5px; }
+
+/* line 47, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+.game-over, .game-won {
+  display: none;
+  position: relative;
+  margin-top: 20px; }
+  /* line 51, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .game-over p, .game-won p {
+    margin-bottom: 20px; }
+  /* line 54, ../../public-source/stylesheets/constructor/module/game-interface.scss */
+  .game-over .retry, .game-won .retry {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 40px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    line-height: 40px;
+    font-family: "Montserrat";
+    letter-spacing: 1px;
+    font-size: 14px; }
+
+/* line 1, ../../public-source/stylesheets/constructor/module/notifications.scss */
+.notification {
+  display: block;
+  position: absolute;
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  top: 50%;
+  left: 50%;
+  background: #2ebd59;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  /* line 10, ../../public-source/stylesheets/constructor/module/notifications.scss */
+  .notification .content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    /* line 17, ../../public-source/stylesheets/constructor/module/notifications.scss */
+    .notification .content p {
+      font-family: "Lato";
+      width: 190px;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 300; }
+    /* line 24, ../../public-source/stylesheets/constructor/module/notifications.scss */
+    .notification .content img {
+      margin-bottom: 20px; }
+
+/* line 30, ../../public-source/stylesheets/constructor/module/notifications.scss */
+.chrome-boys {
+  display: none; }
+  /* line 32, ../../public-source/stylesheets/constructor/module/notifications.scss */
+  .chrome-boys img {
+    width: 90px;
+    opacity: 0.8; }
+
+/* line 38, ../../public-source/stylesheets/constructor/module/notifications.scss */
+.gps-tracker {
+  display: none; }
+  /* line 40, ../../public-source/stylesheets/constructor/module/notifications.scss */
+  .gps-tracker img {
+    width: 150px; }
+
+/* line 45, ../../public-source/stylesheets/constructor/module/notifications.scss */
+.tutorials {
+  display: none; }

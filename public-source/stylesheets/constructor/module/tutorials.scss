@@ -1,0 +1,33 @@
+.tutorials {
+  .tutorial-holder{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .tutorial {
+      display: none;
+      position: absolute;
+      top:50%;
+      left:50%;
+      @include transform(translate(-50%,-50%));
+      p {
+        margin-top: 20px;
+        letter-spacing: 0;
+        font-size: 18px;
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .nav-orbs {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    margin:0;
+    .orb {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

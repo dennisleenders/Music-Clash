@@ -1,0 +1,25 @@
+.nav-orbs {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 54px;
+  .orb {
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background:none;
+    margin-right: 5px;
+    box-sizing:border-box;
+    border:1px solid white;
+
+    &:last-child {
+      margin:0;
+    }
+
+    &.selected {
+      background:white;
+    }
+  }
+}

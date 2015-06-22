@@ -1,0 +1,47 @@
+.notification {
+  display: block;
+  position: absolute;
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  top: 50%;
+  left: 50%;
+  background: $spotifyGreen;
+  @include transform(translate(-50%,-50%));
+  .content {
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%,-50%));
+
+    p {
+      font-family: "Lato";
+      width: 190px;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 300;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.chrome-boys {
+  display: none;
+  img {
+    width: 90px;
+    opacity: 0.8;
+  }
+}
+
+.gps-tracker {
+  display: none;
+  img {
+    width: 150px;
+  }
+}
+
+.tutorials {
+  display: none;
+}

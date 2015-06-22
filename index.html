@@ -1,0 +1,131 @@
+<!doctype html >
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Dennis Leenders and Tom Luijten">
+    <title>Music Clash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Music Clash">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" href="public/media/img/favicon_32x32.png" />
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic|Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <script src="public/javascripts/vendor/oauth.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Game -->
+    <div id="game-container"></div>
+
+    <!-- Audio -->
+    <audio class="audio"></audio>
+
+    <!-- Vinyl disk -->
+    <div class="vinyl">
+      <img src="public/media/img/vinyl.png">
+    </div>
+
+    <!-- My Playlists -->
+    <section class="my-playlists" id="playlists">
+      <div class="playlists-container"></div>
+      <div class="nav-orbs"></div>
+    </section>
+
+    <!-- Audio initiator -->
+    <div class="choose-playlist">
+      <div class="overlay"></div>
+      <p>Klik hier om de track te kiezen die jij wilt horen.!</p>
+    </div>
+
+    <!-- Hipster Border -->
+    <div class="frame"></div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="public/media/img/mc_logo.png">
+    </div>
+
+    <!--### POP-UPS ###-->
+    <!-- Spotify Login -->
+    <section class="spotify-login">
+      <div class="btn">
+        <span class="btn-icon"></span>
+        <p class="btn-text">Log <span>in</span></p>
+      </div>
+    </section>
+
+    <!-- Tutorials -->
+    <div class="notification tutorials" id="tutorials">
+      <div class="tutorial-holder">
+        <div class="tutorial active">
+          <img src="public/media/img/tutorials/one.jpg">
+          <p>Log in met je<br/> Spotify account</p>
+        </div>
+        <div class="tutorial">
+          <img src="public/media/img/tutorials/two.jpg">
+          <p>Kies de track die jij<br/> wilt horen in de wachtruimte!</p>
+        </div>
+        <div class="tutorial">
+          <img src="public/media/img/tutorials/three.jpg">
+          <p>Overleef 5 andere tracks<br/> door het ontwijken van vijanden</p>
+        </div>
+        <div class="tutorial">
+          <img src="public/media/img/tutorials/four.jpg">
+          <p>Zorg voor de hoogste score<br/> en jou track wordt afgespeelt!</p>
+        </div>
+      </div>
+      <div class="nav-orbs">
+        <div class="orb selected"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+      </div>
+    </div>
+
+    <!-- Best viewed in Chrome -->
+    <div class="notification chrome-boys">
+      <div class="content">
+        <img src="public/media/img/chrome-logo.png">
+        <p>This game is optimized for Chrome. For a better experience we advice to use the Chrome browser.</p>
+      </div>
+    </div>
+
+    <!-- GPS location -->
+    <div class="notification gps-tracker">
+      <div class="content">
+        <img src="public/media/client/starbuck_logo.png">
+        <p>Get to a nearby Starbucks near your location to play the game!</p>
+      </div>
+    </div>
+
+
+    <!--### GAME UI ###-->
+    <!-- Profile orb -->
+    <div class="profile-orb">
+      <div class="photo"></div>
+    </div>
+    <!-- Track playing -->
+    <div class="track-playing">
+      <p>Tokyo <span>- Hotel Boulaviar</span></p>
+    </div>
+    <!-- Game over Panel-->
+    <div class="game-over">
+      <div class="retry">RETRY</div>
+    </div>
+
+    <!-- Game over Panel-->
+    <div class="game-won">
+      <p>Nice! You made it!</p>
+      <div class="retry">RETRY</div>
+    </div>
+
+    <script type="text/javascript" src="public/javascripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="public/javascripts/vendor/hammer.js"></script>
+    <script type="text/javascript" src="public/javascripts/vendor/cookie.js"></script>
+    <script type="text/javascript" src="public/javascripts/vendor/phaser.min.js"></script>
+    <script type="text/javascript" src="public/javascripts/vendor/Juicy.js"></script>
+    <script type="text/javascript" src="public/javascripts/app.js"></script>
+  </body>
+</html>
